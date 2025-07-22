@@ -1,0 +1,52 @@
+//1. not a error
+import { GoogleGenAI } from "@google/genai";
+
+const ai = new GoogleGenAI({
+  apiKey: "--YOUR API KEY--",
+});
+
+async function main(prompt) {
+  const response = await ai.models.generateContent({
+    model: "gemini-2.0-flash",
+    contents: prompt,
+    config: {
+      maxOutputTokens: 500,
+      temperature: 0.1,
+    },
+  });
+  console.log(response.text);
+}
+export default main;""
+
+//2
+For ppl selecting 1.0 pro moodel you wont be able to generate response bcuz google stopped the live api support
+
+
+import { GoogleGenAI } from "@google/genai";
+
+const ai = new GoogleGenAI({
+  apiKey: "AIzaSyArBQLg2SEdbuO2la8tsYFdsJ0nwyrTtBA",
+});
+
+async function main(prompt) {
+  const response = await ai.models.generateContent({
+    model: "gemini-2.0-flash",
+    contents: prompt,
+    config: {
+      maxOutputTokens: 500,
+      temperature: 0.1,
+    },
+  });
+  console.log(response.text);
+}
+export default main;""
+
+Gemini.js code
+
+//3
+For those whoes API is not giving output in console they have to use updated version of gemini API
+
+const MODEL_NAME = "gemini-2.5-flash-preview-05-20";
+
+change this line in gemini.js file
+
