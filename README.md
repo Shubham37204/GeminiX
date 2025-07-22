@@ -1,7 +1,4 @@
-### 📘 `README.md` for **GeminiX**
-
-
-# GeminiX
+#GeminiX
 
 🔮 GeminiX is a modern web project that combines clean UI/UX design with scalable architecture for fast experimentation and development.
 
